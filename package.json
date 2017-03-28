@@ -1,0 +1,16 @@
+{
+  "name": "build-a-beer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack -c webpack.config.js",
+    "demo": "http-server . -p 8000"
+  },
+  "author": "Ben Centra <blcentra@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^2.3.2"
+  }
+}
