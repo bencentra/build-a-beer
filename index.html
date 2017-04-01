@@ -20,9 +20,12 @@
           <h1 class="text-center">Build-a-Beer</h1>
         </div>
       </div>
-      <div class="row" id="total-extract">
-        <div class="col">
-          <card v-bind:form="config" v-bind:value="value"></card>
+      <div class="row">
+        <div class="col-6" id="total-extract">
+          <eq-form v-bind:config="config" v-bind:value="value"></eq-form>
+        </div>
+        <div class="col-6" id="gravity-per-source">
+          <eq-form v-bind:config="config" v-bind:value="value"></eq-form>
         </div>
       </div>
     </div>
