@@ -10,7 +10,9 @@
       integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
       crossorigin="anonymous">
     <style>
-
+      .eq-col {
+        margin-top: 12px;
+      }
     </style>
   </head>
   <body>
@@ -21,10 +23,16 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-6" id="total-extract">
+        <div class="col-6 eq-col" id="total-extract">
           <eq-form v-bind:config="config" v-bind:value="value"></eq-form>
         </div>
-        <div class="col-6" id="gravity-per-source">
+        <div class="col-6 eq-col" id="gravity-per-source">
+          <eq-form v-bind:config="config" v-bind:value="value"></eq-form>
+        </div>
+        <div class="col-6 eq-col" id="ingredient-gravity">
+          <eq-form v-bind:config="config" v-bind:value="value"></eq-form>
+        </div>
+        <div class="col-6 eq-col" id="pounds-per-ingredient">
           <eq-form v-bind:config="config" v-bind:value="value"></eq-form>
         </div>
       </div>

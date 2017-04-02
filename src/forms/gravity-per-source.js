@@ -16,7 +16,7 @@ const percentOfGristInput = {
 };
 
 const gravityPerSourceConfig = {
-  title: 'Gravity Per Source',
+  title: 'Gravity Per Ingredient',
   inputs: [totalGravityInput, percentOfGristInput],
   result: {
     name: 'Gravity',
@@ -28,7 +28,6 @@ function calculate() {
   const totalGravity = Number.parseInt(totalGravityInput.value) || 0;
   const percentOfGrist = Number.parseFloat(percentOfGristInput.value / 100) || 0;
   const gravityPerSource = Number.parseInt(brew.gravityPerSource(percentOfGrist, totalGravity));
-  console.log(totalGravity, percentOfGrist, gravityPerSource);
   return gravityPerSource;
 }
 

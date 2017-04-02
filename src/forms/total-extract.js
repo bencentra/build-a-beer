@@ -28,7 +28,6 @@ function calculate() {
   const finalGravity = brew.toGU(Number.parseFloat(finalGravityInput.value)) || 0;
   const finalVolume = Number.parseFloat(finalVolumeInput.value) || 0;
   const totalGravity = Number.parseInt(brew.totalGravity(finalVolume, finalGravity));
-  console.log(finalGravity, finalVolume, totalGravity);
   return totalGravity;
 }
 
